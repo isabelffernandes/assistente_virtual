@@ -1,0 +1,18 @@
+/*
+Theme Name: Twenty Twenty Child
+Theme URL: http://wpamanuke.com/
+Description: Twenty Twenty Child Theme
+Author: WPAmaNuke
+Author URL: http://wpamanuke.com/
+Template: twentytwenty
+Version: 1.0.0
+Text Domain: twentytwenty-child
+*/
+/* Custom CSS goes after this line */
+
+h2.entry-title {
+  background-color: #ff0000;
+}
+h1.entry-title {
+  background-color: #ff0000;
+}

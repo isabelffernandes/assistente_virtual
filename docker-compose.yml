@@ -1,0 +1,26 @@
+version: "3.3"
+
+services:
+  assistente_virtual:
+    build: .
+    ports:
+      - 80:80
+      - 443:443
+    environment:
+      VIRTUAL_HOST: localhost
+      WORDPRESS_DB_HOST: mariadb_10_5_5:3306
+      WORDPRESS_DB_NAME: assistente_virtual
+      WORDPRESS_DB_USER: assistente_virtual
+      WORDPRESS_DB_PASSWORD: LPaJgcz03HXsY7*E
+    volumes:
+      - ./public_html:/var/www/html
+      - ./config.ini:/usr/local/etc/php/conf.d/config.ini
+    container_name: assistente_virtual  
+
+volumes:
+  assistente_virtual:
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
